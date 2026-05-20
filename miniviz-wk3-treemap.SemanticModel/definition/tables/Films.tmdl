@@ -1,0 +1,95 @@
+table Films
+	lineageTag: 5b4b4d2a-6116-446b-90d5-f9930d416d07
+
+	column Title
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Title
+		lineageTag: c22c6d7e-3606-4ed1-8c4b-3a0faa909f88
+
+	column Phase
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Phase
+		lineageTag: 62f1741b-22b7-4c1e-b2a3-4f2fa9b2693a
+
+	column ReleaseDate
+		dataType: dateTime
+		formatString: Long Date
+		summarizeBy: none
+		sourceColumn: ReleaseDate
+		lineageTag: c64c5379-7d60-431e-9c10-f49c72f98f84
+
+	column WorldwideBoxOffice
+		dataType: int64
+		formatString: \$#,0;(\$#,0);\$#,0
+		summarizeBy: sum
+		sourceColumn: WorldwideBoxOffice
+		lineageTag: d9890d6d-0fef-4f5e-825d-79a41a480a83
+
+	column Budget
+		dataType: int64
+		formatString: \$#,0;(\$#,0);\$#,0
+		summarizeBy: sum
+		sourceColumn: Budget
+		lineageTag: b02a3b35-0b42-4974-a7cc-901951bf620b
+
+	column RTCriticScore
+		dataType: int64
+		formatString: 0
+		summarizeBy: average
+		sourceColumn: RTCriticScore
+		lineageTag: 968ef0c2-e12f-4ae0-88b1-10756604add4
+
+	column RTAudienceScore
+		dataType: int64
+		formatString: 0
+		summarizeBy: average
+		sourceColumn: RTAudienceScore
+		lineageTag: 4db6384c-99c2-4259-afa3-958e626111cb
+
+	column Director
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Director
+		lineageTag: f3920359-8ad9-483b-9a7f-842de2c2625a
+
+	column RuntimeMinutes
+		dataType: int64
+		formatString: 0
+		summarizeBy: sum
+		sourceColumn: RuntimeMinutes
+		lineageTag: 22d02c15-fb9b-4e4d-aad9-666c5adb924a
+
+	column PosterUrl
+		dataType: string
+		summarizeBy: none
+		sourceColumn: PosterUrl
+		dataCategory: ImageUrl
+		lineageTag: 4756a7ea-4a20-4ff3-9513-bc9fc5594eca
+
+	partition Films = m
+		mode: import
+		source = ```
+				let
+				    Source = Csv.Document(
+				        File.Contents("C:\Users\jmanw\claude projects\miniviz-week3\Data\mcu_films.csv"),
+				        [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+				    ),
+				    PromoteHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    ChangeTypes = Table.TransformColumnTypes(PromoteHeaders, {
+				        {"Title", type text},
+				        {"Phase", type text},
+				        {"ReleaseDate", type date},
+				        {"WorldwideBoxOffice", Int64.Type},
+				        {"Budget", Int64.Type},
+				        {"RTCriticScore", Int64.Type},
+				        {"RTAudienceScore", Int64.Type},
+				        {"Director", type text},
+				        {"RuntimeMinutes", Int64.Type},
+				        {"PosterUrl", type text}
+				    })
+				in
+				    ChangeTypes
+				```
+
