@@ -2,7 +2,7 @@ table Films
 	lineageTag: 5b4b4d2a-6116-446b-90d5-f9930d416d07
 
 	measure 'Total Box Office' = SUM(Films[WorldwideBoxOffice])
-		formatString: \$#,0,,.0"B"
+		formatString: \$#,0.0,,,"B"
 		lineageTag: 7a94550b-745e-4047-b730-59003896670c
 
 	measure 'Film Count' = COUNTROWS(Films)
@@ -13,7 +13,7 @@ table Films
 		formatString: 0\%
 		lineageTag: f3ab9531-016b-4e86-8e13-014688ae1b51
 
-	measure 'PhaseYearLabel' = SELECTEDVALUE(Films[Phase]) & " · " & FORMAT(SELECTEDVALUE(Films[ReleaseDate]), "yyyy")
+	measure PhaseYearLabel = SELECTEDVALUE(Films[Phase]) & " · " & FORMAT(SELECTEDVALUE(Films[ReleaseDate]), "yyyy")
 		lineageTag: a1c2e3f4-1111-2222-3333-444455556666
 
 	measure 'Budget Sum' = SUM(Films[Budget])
@@ -29,74 +29,76 @@ table Films
 
 	column Title
 		dataType: string
+		lineageTag: c22c6d7e-3606-4ed1-8c4b-3a0faa909f88
 		summarizeBy: none
 		sourceColumn: Title
-		lineageTag: c22c6d7e-3606-4ed1-8c4b-3a0faa909f88
 
 	column Phase
 		dataType: string
+		lineageTag: 62f1741b-22b7-4c1e-b2a3-4f2fa9b2693a
 		summarizeBy: none
 		sourceColumn: Phase
-		lineageTag: 62f1741b-22b7-4c1e-b2a3-4f2fa9b2693a
 
 	column ReleaseDate
 		dataType: dateTime
 		formatString: Long Date
+		lineageTag: c64c5379-7d60-431e-9c10-f49c72f98f84
 		summarizeBy: none
 		sourceColumn: ReleaseDate
-		lineageTag: c64c5379-7d60-431e-9c10-f49c72f98f84
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column WorldwideBoxOffice
 		dataType: int64
 		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: d9890d6d-0fef-4f5e-825d-79a41a480a83
 		summarizeBy: sum
 		sourceColumn: WorldwideBoxOffice
-		lineageTag: d9890d6d-0fef-4f5e-825d-79a41a480a83
 
 	column Budget
 		dataType: int64
 		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: b02a3b35-0b42-4974-a7cc-901951bf620b
 		summarizeBy: sum
 		sourceColumn: Budget
-		lineageTag: b02a3b35-0b42-4974-a7cc-901951bf620b
 
 	column RTCriticScore
 		dataType: int64
 		formatString: 0
+		lineageTag: 968ef0c2-e12f-4ae0-88b1-10756604add4
 		summarizeBy: average
 		sourceColumn: RTCriticScore
-		lineageTag: 968ef0c2-e12f-4ae0-88b1-10756604add4
 
 	column RTAudienceScore
 		dataType: int64
 		formatString: 0
+		lineageTag: 4db6384c-99c2-4259-afa3-958e626111cb
 		summarizeBy: average
 		sourceColumn: RTAudienceScore
-		lineageTag: 4db6384c-99c2-4259-afa3-958e626111cb
 
 	column Director
 		dataType: string
+		lineageTag: f3920359-8ad9-483b-9a7f-842de2c2625a
 		summarizeBy: none
 		sourceColumn: Director
-		lineageTag: f3920359-8ad9-483b-9a7f-842de2c2625a
 
 	column RuntimeMinutes
 		dataType: int64
 		formatString: 0
+		lineageTag: 22d02c15-fb9b-4e4d-aad9-666c5adb924a
 		summarizeBy: sum
 		sourceColumn: RuntimeMinutes
-		lineageTag: 22d02c15-fb9b-4e4d-aad9-666c5adb924a
 
 	column PosterUrl
 		dataType: string
+		lineageTag: 4756a7ea-4a20-4ff3-9513-bc9fc5594eca
+		dataCategory: ImageUrl
 		summarizeBy: none
 		sourceColumn: PosterUrl
-		dataCategory: ImageUrl
-		lineageTag: 4756a7ea-4a20-4ff3-9513-bc9fc5594eca
 
 	partition Films = m
 		mode: import
-		source = ```
+		source =
 				let
 				    Source = Csv.Document(
 				        File.Contents("C:\Users\jmanw\claude projects\miniviz-week3\Data\mcu_films.csv"),
@@ -117,5 +119,4 @@ table Films
 				    })
 				in
 				    ChangeTypes
-				```
 

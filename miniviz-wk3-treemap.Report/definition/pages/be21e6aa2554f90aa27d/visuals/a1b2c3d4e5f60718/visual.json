@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a1b2c3d4e5f60718",
+  "position": {
+    "x": 24,
+    "y": 120,
+    "z": 0,
+    "height": 520,
+    "width": 970,
+    "tabOrder": 0
+  },
   "visual": {
     "visualType": "treemap",
     "query": {
@@ -7,7 +16,6 @@
         "Category": {
           "projections": [
             {
-              "queryRef": "Films.Phase",
               "field": {
                 "Column": {
                   "Expression": {
@@ -18,50 +26,14 @@
                   "Property": "Phase"
                 }
               },
+              "queryRef": "Films.Phase",
               "nativeQueryRef": "Phase"
-            }
-          ]
-        },
-        "Details": {
-          "projections": [
-            {
-              "queryRef": "Films.Title",
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Films"
-                    }
-                  },
-                  "Property": "Title"
-                }
-              },
-              "nativeQueryRef": "Title"
-            }
-          ]
-        },
-        "Values": {
-          "projections": [
-            {
-              "queryRef": "Films.Total Box Office",
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Films"
-                    }
-                  },
-                  "Property": "Total Box Office"
-                }
-              },
-              "nativeQueryRef": "Total Box Office"
             }
           ]
         },
         "Gradient": {
           "projections": [
             {
-              "queryRef": "Films.Avg RT Score",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -72,7 +44,45 @@
                   "Property": "Avg RT Score"
                 }
               },
+              "queryRef": "Films.Avg RT Score",
               "nativeQueryRef": "Avg RT Score"
+            }
+          ]
+        },
+        "Details": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Title"
+                }
+              },
+              "queryRef": "Films.Title",
+              "nativeQueryRef": "Title",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Total Box Office"
+                }
+              },
+              "queryRef": "Films.Total Box Office",
+              "nativeQueryRef": "Total Box Office"
             }
           ]
         }
@@ -99,28 +109,7 @@
     "objects": {
       "dataPoint": [
         {
-          "properties": {
-            "fillRule": {
-              "fillRule": {
-                "linearGradient2": {
-                  "min": {
-                    "color": {
-                      "Literal": {
-                        "Value": "'#7A1F1F'"
-                      }
-                    }
-                  },
-                  "max": {
-                    "color": {
-                      "Literal": {
-                        "Value": "'#1F7A3A'"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ],
       "labels": [
@@ -136,7 +125,7 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000000D"
+                  "Value": "0D"
                 }
               }
             },
@@ -164,7 +153,6 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -195,10 +183,17 @@
       "visualTooltip": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Canvas'"
+                  "Value": "'ReportPage'"
                 }
               }
             },
@@ -212,15 +207,82 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
-  "position": {
-    "x": 24,
-    "y": 120,
-    "z": 0,
-    "width": 970,
-    "height": 520,
-    "tabOrder": 0
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "306f042676c6dd9baed1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Title"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "19e5addfe1addc0fd7d2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Total Box Office"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ad7b1f373cb7f77eb769",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Avg RT Score"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "63fe224984ae95f10967",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Phase"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

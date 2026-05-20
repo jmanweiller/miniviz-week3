@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "poster",
+  "position": {
+    "x": 16,
+    "y": 16,
+    "z": 0,
+    "height": 240,
+    "width": 288,
+    "tabOrder": 0
+  },
   "visual": {
     "visualType": "cardVisual",
     "query": {
@@ -25,8 +34,6 @@
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -41,15 +48,7 @@
           }
         }
       ]
-    }
-  },
-  "position": {
-    "x": 16,
-    "y": 16,
-    "z": 0,
-    "width": 288,
-    "height": 240,
-    "tabOrder": 0
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+    },
+    "drillFilterOtherVisuals": true
+  }
 }

@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "stats",
+  "position": {
+    "x": 16,
+    "y": 340,
+    "z": 0,
+    "height": 76,
+    "width": 288,
+    "tabOrder": 0
+  },
   "visual": {
     "visualType": "multiRowCard",
     "query": {
@@ -85,8 +94,6 @@
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -101,15 +108,7 @@
           }
         }
       ]
-    }
-  },
-  "position": {
-    "x": 16,
-    "y": 340,
-    "z": 0,
-    "width": 288,
-    "height": 76,
-    "tabOrder": 0
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+    },
+    "drillFilterOtherVisuals": true
+  }
 }
