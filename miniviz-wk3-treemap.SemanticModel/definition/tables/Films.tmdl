@@ -2,7 +2,7 @@ table Films
 	lineageTag: 5b4b4d2a-6116-446b-90d5-f9930d416d07
 
 	measure 'Total Box Office' = SUM(Films[WorldwideBoxOffice])
-		formatString: \$#,0.0,,,"B"
+		formatString: \$#,0,,,.0"B"
 		lineageTag: 7a94550b-745e-4047-b730-59003896670c
 
 	measure 'Film Count' = COUNTROWS(Films)
@@ -17,7 +17,7 @@ table Films
 		lineageTag: a1c2e3f4-1111-2222-3333-444455556666
 
 	measure 'Budget Sum' = SUM(Films[Budget])
-		formatString: \$#,0,,"M"
+		formatString: \$#,0,,.0"M"
 		lineageTag: b2d3f4a5-1111-2222-3333-444455556666
 
 	measure 'Audience Score' = AVERAGE(Films[RTAudienceScore])
