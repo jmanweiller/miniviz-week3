@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "miniviz-wk3-treemap"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3d530275-906d-4114-b714-df5253aaceb3"
+  }
+}

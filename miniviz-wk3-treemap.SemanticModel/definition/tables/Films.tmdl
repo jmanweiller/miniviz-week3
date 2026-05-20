@@ -1,6 +1,18 @@
 table Films
 	lineageTag: 5b4b4d2a-6116-446b-90d5-f9930d416d07
 
+	measure 'Total Box Office' = SUM(Films[WorldwideBoxOffice])
+		formatString: \$#,0,,.0"B"
+		lineageTag: 7a94550b-745e-4047-b730-59003896670c
+
+	measure 'Film Count' = COUNTROWS(Films)
+		formatString: 0
+		lineageTag: eacfde74-8977-483f-90d9-85a3331ee2d5
+
+	measure 'Avg RT Score' = AVERAGE(Films[RTCriticScore])
+		formatString: 0\%
+		lineageTag: f3ab9531-016b-4e86-8e13-014688ae1b51
+
 	column Title
 		dataType: string
 		summarizeBy: none
