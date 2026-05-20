@@ -1,38 +1,38 @@
-Title,Phase,ReleaseDate,WorldwideBoxOffice,Budget,RTCriticScore,RTAudienceScore,Director,RuntimeMinutes
-Iron Man,Phase 1,2008-05-02,585796247,140000000,94,91,Jon Favreau,126
-The Incredible Hulk,Phase 1,2008-06-13,264770996,150000000,67,69,Louis Leterrier,112
-Iron Man 2,Phase 1,2010-05-07,623933331,200000000,72,71,Jon Favreau,124
-Thor,Phase 1,2011-05-06,449326618,150000000,77,76,Kenneth Branagh,115
-Captain America: The First Avenger,Phase 1,2011-07-22,370569776,140000000,80,74,Joe Johnston,124
-The Avengers,Phase 1,2012-05-04,1518815515,220000000,91,91,Joss Whedon,143
-Iron Man 3,Phase 2,2013-05-03,1214811252,200000000,79,78,Shane Black,130
-Thor: The Dark World,Phase 2,2013-11-08,644783140,170000000,66,75,Alan Taylor,112
-Captain America: The Winter Soldier,Phase 2,2014-04-04,714421503,170000000,90,92,Russo Brothers,136
-Guardians of the Galaxy,Phase 2,2014-08-01,772776600,170000000,92,92,James Gunn,121
-Avengers: Age of Ultron,Phase 2,2015-05-01,1402809540,365000000,76,83,Joss Whedon,141
-Ant-Man,Phase 2,2015-07-17,519311965,130000000,83,86,Peyton Reed,117
-Captain America: Civil War,Phase 3,2016-05-06,1153337496,250000000,90,89,Russo Brothers,147
-Doctor Strange,Phase 3,2016-11-04,677796076,165000000,89,86,Scott Derrickson,115
-Guardians of the Galaxy Vol. 2,Phase 3,2017-05-05,863756051,200000000,85,87,James Gunn,136
-Spider-Man: Homecoming,Phase 3,2017-07-07,880166924,175000000,92,87,Jon Watts,133
-Thor: Ragnarok,Phase 3,2017-11-03,855301806,180000000,93,87,Taika Waititi,130
-Black Panther,Phase 3,2018-02-16,1349926083,200000000,96,93,Ryan Coogler,134
-Avengers: Infinity War,Phase 3,2018-04-27,2052415039,325000000,85,91,Russo Brothers,149
-Ant-Man and the Wasp,Phase 3,2018-07-06,622674139,162000000,87,75,Peyton Reed,118
-Captain Marvel,Phase 3,2019-03-08,1131416446,175000000,79,45,Anna Boden & Ryan Fleck,123
-Avengers: Endgame,Phase 3,2019-04-26,2799439100,356000000,94,90,Russo Brothers,181
-Spider-Man: Far From Home,Phase 3,2019-07-02,1131927996,160000000,90,95,Jon Watts,129
-Black Widow,Phase 4,2021-07-09,379751655,200000000,79,91,Cate Shortland,134
-Shang-Chi and the Legend of the Ten Rings,Phase 4,2021-09-03,432243292,150000000,91,98,Destin Daniel Cretton,132
-Eternals,Phase 4,2021-11-05,402064899,200000000,47,77,Chloé Zhao,156
-Spider-Man: No Way Home,Phase 4,2021-12-17,1921847111,200000000,93,98,Jon Watts,148
-Doctor Strange in the Multiverse of Madness,Phase 4,2022-05-06,955775804,200000000,73,85,Sam Raimi,126
-Thor: Love and Thunder,Phase 4,2022-07-08,760928081,250000000,63,76,Taika Waititi,118
-Black Panther: Wakanda Forever,Phase 4,2022-11-11,859208836,250000000,84,94,Ryan Coogler,161
-Ant-Man and the Wasp: Quantumania,Phase 5,2023-02-17,476071180,200000000,46,82,Peyton Reed,124
-Guardians of the Galaxy Vol. 3,Phase 5,2023-05-05,845555777,250000000,82,94,James Gunn,150
-The Marvels,Phase 5,2023-11-10,206137668,274800000,61,81,Nia DaCosta,105
-Deadpool & Wolverine,Phase 5,2024-07-26,1338073645,200000000,78,96,Shawn Levy,128
-Captain America: Brave New World,Phase 5,2025-02-14,415100000,180000000,46,80,Julius Onah,118
-Thunderbolts*,Phase 5,2025-05-02,382400000,180000000,88,94,Jake Schreier,127
-The Fantastic Four: First Steps,Phase 6,2025-07-25,521900000,200000000,86,91,Matt Shakman,115
+"Title","Phase","ReleaseDate","WorldwideBoxOffice","Budget","RTCriticScore","RTAudienceScore","Director","RuntimeMinutes","PosterUrl"
+"Iron Man","Phase 1","2008-05-02","585796247","140000000","94","91","Jon Favreau","126","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/iron-man.jpg"
+"The Incredible Hulk","Phase 1","2008-06-13","264770996","150000000","67","69","Louis Leterrier","112","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/the-incredible-hulk.jpg"
+"Iron Man 2","Phase 1","2010-05-07","623933331","200000000","72","71","Jon Favreau","124","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/iron-man-2.jpg"
+"Thor","Phase 1","2011-05-06","449326618","150000000","77","76","Kenneth Branagh","115","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/thor.jpg"
+"Captain America: The First Avenger","Phase 1","2011-07-22","370569776","140000000","80","74","Joe Johnston","124","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/captain-america-the-first-avenger.jpg"
+"The Avengers","Phase 1","2012-05-04","1518815515","220000000","91","91","Joss Whedon","143","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/the-avengers.jpg"
+"Iron Man 3","Phase 2","2013-05-03","1214811252","200000000","79","78","Shane Black","130","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/iron-man-3.jpg"
+"Thor: The Dark World","Phase 2","2013-11-08","644783140","170000000","66","75","Alan Taylor","112","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/thor-the-dark-world.jpg"
+"Captain America: The Winter Soldier","Phase 2","2014-04-04","714421503","170000000","90","92","Russo Brothers","136","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/captain-america-the-winter-soldier.jpg"
+"Guardians of the Galaxy","Phase 2","2014-08-01","772776600","170000000","92","92","James Gunn","121","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/guardians-of-the-galaxy.jpg"
+"Avengers: Age of Ultron","Phase 2","2015-05-01","1402809540","365000000","76","83","Joss Whedon","141","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/avengers-age-of-ultron.jpg"
+"Ant-Man","Phase 2","2015-07-17","519311965","130000000","83","86","Peyton Reed","117","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/ant-man.jpg"
+"Captain America: Civil War","Phase 3","2016-05-06","1153337496","250000000","90","89","Russo Brothers","147","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/captain-america-civil-war.jpg"
+"Doctor Strange","Phase 3","2016-11-04","677796076","165000000","89","86","Scott Derrickson","115","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/doctor-strange.jpg"
+"Guardians of the Galaxy Vol. 2","Phase 3","2017-05-05","863756051","200000000","85","87","James Gunn","136","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/guardians-of-the-galaxy-vol-2.jpg"
+"Spider-Man: Homecoming","Phase 3","2017-07-07","880166924","175000000","92","87","Jon Watts","133","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/spider-man-homecoming.jpg"
+"Thor: Ragnarok","Phase 3","2017-11-03","855301806","180000000","93","87","Taika Waititi","130","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/thor-ragnarok.jpg"
+"Black Panther","Phase 3","2018-02-16","1349926083","200000000","96","93","Ryan Coogler","134","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/black-panther.jpg"
+"Avengers: Infinity War","Phase 3","2018-04-27","2052415039","325000000","85","91","Russo Brothers","149","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/avengers-infinity-war.jpg"
+"Ant-Man and the Wasp","Phase 3","2018-07-06","622674139","162000000","87","75","Peyton Reed","118","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/ant-man-and-the-wasp.jpg"
+"Captain Marvel","Phase 3","2019-03-08","1131416446","175000000","79","45","Anna Boden & Ryan Fleck","123","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/captain-marvel.jpg"
+"Avengers: Endgame","Phase 3","2019-04-26","2799439100","356000000","94","90","Russo Brothers","181","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/avengers-endgame.jpg"
+"Spider-Man: Far From Home","Phase 3","2019-07-02","1131927996","160000000","90","95","Jon Watts","129","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/spider-man-far-from-home.jpg"
+"Black Widow","Phase 4","2021-07-09","379751655","200000000","79","91","Cate Shortland","134","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/black-widow.jpg"
+"Shang-Chi and the Legend of the Ten Rings","Phase 4","2021-09-03","432243292","150000000","91","98","Destin Daniel Cretton","132","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/shang-chi-and-the-legend-of-the-ten-rings.jpg"
+"Eternals","Phase 4","2021-11-05","402064899","200000000","47","77","Chloé Zhao","156","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/eternals.jpg"
+"Spider-Man: No Way Home","Phase 4","2021-12-17","1921847111","200000000","93","98","Jon Watts","148","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/spider-man-no-way-home.jpg"
+"Doctor Strange in the Multiverse of Madness","Phase 4","2022-05-06","955775804","200000000","73","85","Sam Raimi","126","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/doctor-strange-in-the-multiverse-of-madness.jpg"
+"Thor: Love and Thunder","Phase 4","2022-07-08","760928081","250000000","63","76","Taika Waititi","118","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/thor-love-and-thunder.jpg"
+"Black Panther: Wakanda Forever","Phase 4","2022-11-11","859208836","250000000","84","94","Ryan Coogler","161","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/black-panther-wakanda-forever.jpg"
+"Ant-Man and the Wasp: Quantumania","Phase 5","2023-02-17","476071180","200000000","46","82","Peyton Reed","124","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/ant-man-and-the-wasp-quantumania.jpg"
+"Guardians of the Galaxy Vol. 3","Phase 5","2023-05-05","845555777","250000000","82","94","James Gunn","150","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/guardians-of-the-galaxy-vol-3.jpg"
+"The Marvels","Phase 5","2023-11-10","206137668","274800000","61","81","Nia DaCosta","105","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/the-marvels.jpg"
+"Deadpool & Wolverine","Phase 5","2024-07-26","1338073645","200000000","78","96","Shawn Levy","128","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/deadpool-wolverine.jpg"
+"Captain America: Brave New World","Phase 5","2025-02-14","415100000","180000000","46","80","Julius Onah","118","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/captain-america-brave-new-world.jpg"
+"Thunderbolts*","Phase 5","2025-05-02","382400000","180000000","88","94","Jake Schreier","127","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/thunderbolts.jpg"
+"The Fantastic Four: First Steps","Phase 6","2025-07-25","521900000","200000000","86","91","Matt Shakman","115","https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/posters/the-fantastic-four-first-steps.jpg"
