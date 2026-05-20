@@ -1,0 +1,55 @@
+{
+  "name": "poster",
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "PosterUrl"
+                }
+              },
+              "queryRef": "Films.PosterUrl",
+              "nativeQueryRef": "PosterUrl",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {},
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "position": {
+    "x": 16,
+    "y": 16,
+    "z": 0,
+    "width": 288,
+    "height": 240,
+    "tabOrder": 0
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+}

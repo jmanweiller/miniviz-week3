@@ -191,6 +191,26 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Canvas'"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'9ed6a63d28441d29'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   },

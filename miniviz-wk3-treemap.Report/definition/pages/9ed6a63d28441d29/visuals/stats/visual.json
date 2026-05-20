@@ -1,0 +1,115 @@
+{
+  "name": "stats",
+  "visual": {
+    "visualType": "multiRowCard",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Total Box Office"
+                }
+              },
+              "queryRef": "Films.Total Box Office",
+              "nativeQueryRef": "Total Box Office",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Budget Sum"
+                }
+              },
+              "queryRef": "Films.Budget Sum",
+              "nativeQueryRef": "Budget Sum",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Avg RT Score"
+                }
+              },
+              "queryRef": "Films.Avg RT Score",
+              "nativeQueryRef": "Avg RT Score",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Audience Score"
+                }
+              },
+              "queryRef": "Films.Audience Score",
+              "nativeQueryRef": "Audience Score",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Films"
+                    }
+                  },
+                  "Property": "Runtime Director"
+                }
+              },
+              "queryRef": "Films.Runtime Director",
+              "nativeQueryRef": "Runtime Director",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {},
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "position": {
+    "x": 16,
+    "y": 340,
+    "z": 0,
+    "width": 288,
+    "height": 76,
+    "tabOrder": 0
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+}
