@@ -49,7 +49,7 @@
             }
           ]
         },
-        "Details": {
+        "Group": {
           "projections": [
             {
               "field": {
@@ -270,7 +270,7 @@
         "type": "Advanced"
       },
       {
-        "name": "63fe224984ae95f10967",
+        "name": "ebc61abdf404817d9e9e",
         "field": {
           "Column": {
             "Expression": {

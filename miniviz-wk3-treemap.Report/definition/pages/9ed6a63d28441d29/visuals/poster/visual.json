@@ -50,5 +50,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fd94a96563ba3919be2b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "PosterUrl"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
