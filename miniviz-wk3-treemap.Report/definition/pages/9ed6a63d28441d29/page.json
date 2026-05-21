@@ -2,8 +2,92 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "9ed6a63d28441d29",
   "displayName": "Tooltip",
-  "width": 320,
-  "height": 420,
   "displayOption": "ActualSize",
+  "height": 420,
+  "width": 320,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a206c6ffc5761403404a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Title"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "6acd58ff574096036553",
+    "type": "Tooltip",
+    "parameters": [
+      {
+        "name": "0c4714d19a48bde54d4e",
+        "boundFilter": "a206c6ffc5761403404a",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Title"
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'tooltip-background.svg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "tooltip-background10713053260719718.svg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Normal'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
   "type": "Tooltip"
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "Fluent2-CY26SU05",
@@ -24,6 +24,19 @@
           }
         }
       }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
     ]
   },
   "resourcePackages": [
@@ -35,6 +48,57 @@
           "name": "Fluent2-CY26SU05",
           "path": "BaseThemes/Fluent2-CY26SU05.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "marvel-report-background5636039843938794.svg",
+          "path": "marvel-report-background5636039843938794.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Super-PBI-logo291521286779885.svg",
+          "path": "Super-PBI-logo291521286779885.svg",
+          "type": "Image"
+        },
+        {
+          "name": "tooltip-background10713053260719718.svg",
+          "path": "tooltip-background10713053260719718.svg",
+          "type": "Image"
+        },
+        {
+          "name": "vs-boxes5685218959846904.svg",
+          "path": "vs-boxes5685218959846904.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-fresh-tomato.svg",
+          "path": "icon-fresh-tomato.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-rotten-splat.svg",
+          "path": "icon-rotten-splat.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-fresh-popcorn.svg",
+          "path": "icon-fresh-popcorn.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-rotten-popcorn.svg",
+          "path": "icon-rotten-popcorn.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-certified-fresh.png",
+          "path": "icon-certified-fresh.png",
+          "type": "Image"
         }
       ]
     }
