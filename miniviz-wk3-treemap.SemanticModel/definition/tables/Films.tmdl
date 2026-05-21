@@ -41,6 +41,15 @@ table Films
 		summarizeBy: none
 		sourceColumn: Title
 
+	column 'Title Short' =
+			VAR _t = Films[Title]
+			VAR _colon = FIND(":", _t, 1, 0)
+			RETURN
+			    IF(_colon = 0, _t, TRIM(MID(_t, _colon + 1, 999)))
+		dataType: string
+		lineageTag: 8e9f0a1b-2c3d-4e5f-6071-829304a5b6c7
+		summarizeBy: none
+
 	column Phase
 		dataType: string
 		lineageTag: 62f1741b-22b7-4c1e-b2a3-4f2fa9b2693a

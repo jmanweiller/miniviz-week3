@@ -141,28 +141,16 @@
                         }
                       },
                       "FillRule": {
-                        "linearGradient3": {
+                        "linearGradient2": {
                           "min": {
                             "color": {
                               "Literal": {
-                                "Value": "'#FF3B30'"
+                                "Value": "'#2A5599'"
                               }
                             },
                             "value": {
                               "Literal": {
-                                "Value": "40D"
-                              }
-                            }
-                          },
-                          "mid": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'#F4F1DE'"
-                              }
-                            },
-                            "value": {
-                              "Literal": {
-                                "Value": "65D"
+                                "Value": "55D"
                               }
                             }
                           },
@@ -245,7 +233,7 @@
                   "expr": {
                     "ThemeDataColor": {
                       "ColorId": 1,
-                      "Percent": 0
+                      "Percent": 0.1
                     }
                   }
                 }
