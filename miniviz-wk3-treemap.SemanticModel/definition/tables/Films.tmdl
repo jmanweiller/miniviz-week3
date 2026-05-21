@@ -28,12 +28,24 @@ table Films
 		lineageTag: d4f5b6c7-1111-2222-3333-444455556666
 
 	measure 'Top Grosser' =
-
 			MAXX(
-			    TOPN(1, ALL(Films), [Total Box Office], DESC),
+			    TOPN(1, ALLSELECTED(Films), [Total Box Office], DESC),
 			    Films[Title]
 			)
 		lineageTag: 3cec8c72-00c8-4b29-848f-5681a0a8b3c4
+
+	measure 'Phase Color' =
+			SWITCH(
+			    SELECTEDVALUE(Films[Phase]),
+			    "Phase 1", "#FF3B30",
+			    "Phase 2", "#FFD60A",
+			    "Phase 3", "#00D4FF",
+			    "Phase 4", "#FF2D92",
+			    "Phase 5", "#FF6B00",
+			    "Phase 6", "#39FF14",
+			    "#FFFFFF"
+			)
+		lineageTag: a4b5c6d7-e8f9-4051-9293-a4b5c6d7e8f9
 
 	measure 'RT Status Icon' =
 			VAR _base = "https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/miniviz-wk3-treemap.Report/StaticResources/RegisteredResources/"
@@ -56,6 +68,10 @@ table Films
 			    )
 		lineageTag: f2b3c4d5-e6f7-4081-92a3-b4c5d6e7f809
 		dataCategory: ImageUrl
+
+	measure Dummy = 1
+		formatString: 0
+		lineageTag: 17d19045-fa20-497b-a427-1d55ee5fd83c
 
 	column Title
 		dataType: string

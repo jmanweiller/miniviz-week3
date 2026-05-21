@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "78250d8dfe5a71e99d30",
   "position": {
-    "x": 1640,
-    "y": 811.11111111111109,
-    "z": 4000,
-    "height": 197.77777777777777,
-    "width": 202.22222222222223,
-    "tabOrder": 3
+    "x": 1640.1743603627995,
+    "y": 811.769865980777,
+    "z": 5000,
+    "height": 197.39759036144579,
+    "width": 95.3718695004738,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -28,20 +28,6 @@
               },
               "queryRef": "Films.Avg RT Score",
               "nativeQueryRef": "Avg RT Score"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Films"
-                    }
-                  },
-                  "Property": "Audience Score"
-                }
-              },
-              "queryRef": "Films.Audience Score",
-              "nativeQueryRef": "Audience Score"
             }
           ]
         }
@@ -85,7 +71,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 6,
                       "Percent": 0
                     }
                   }
@@ -204,20 +190,6 @@
           "selector": {
             "metadata": "Films.Avg RT Score"
           }
-        },
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Fans'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Films.Audience Score"
-          }
         }
       ]
     },
@@ -257,37 +229,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ffcb81f1e48d8320ed02",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "Avg RT Score"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "94f878b39be64d0641b8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "Audience Score"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

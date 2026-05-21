@@ -56,8 +56,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "marvel-report-background5636039843938794.svg",
-          "path": "marvel-report-background5636039843938794.svg",
+          "name": "marvel-report-background9433891801520679.svg",
+          "path": "marvel-report-background9433891801520679.svg",
           "type": "Image"
         },
         {
@@ -66,38 +66,13 @@
           "type": "Image"
         },
         {
-          "name": "tooltip-background10713053260719718.svg",
-          "path": "tooltip-background10713053260719718.svg",
+          "name": "tooltip-background6406370322829428.svg",
+          "path": "tooltip-background6406370322829428.svg",
           "type": "Image"
         },
         {
-          "name": "vs-boxes5685218959846904.svg",
-          "path": "vs-boxes5685218959846904.svg",
-          "type": "Image"
-        },
-        {
-          "name": "icon-fresh-tomato.svg",
-          "path": "icon-fresh-tomato.svg",
-          "type": "Image"
-        },
-        {
-          "name": "icon-rotten-splat.svg",
-          "path": "icon-rotten-splat.svg",
-          "type": "Image"
-        },
-        {
-          "name": "icon-fresh-popcorn.svg",
-          "path": "icon-fresh-popcorn.svg",
-          "type": "Image"
-        },
-        {
-          "name": "icon-rotten-popcorn.svg",
-          "path": "icon-rotten-popcorn.svg",
-          "type": "Image"
-        },
-        {
-          "name": "icon-certified-fresh.png",
-          "path": "icon-certified-fresh.png",
+          "name": "versus_comic_style9596562713622043.svg",
+          "path": "versus_comic_style9596562713622043.svg",
           "type": "Image"
         }
       ]

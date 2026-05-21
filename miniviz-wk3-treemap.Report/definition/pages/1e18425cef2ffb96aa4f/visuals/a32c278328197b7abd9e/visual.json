@@ -4,10 +4,10 @@
   "position": {
     "x": 1640,
     "y": 246.66666666666666,
-    "z": 2000,
+    "z": 3000,
     "height": 195.55555555555554,
     "width": 210,
-    "tabOrder": 1
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -70,9 +70,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#00D4FF'"
                     }
                   }
                 }
@@ -171,9 +170,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#00D4FF'"
                     }
                   }
                 }
@@ -182,7 +180,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "16D"
+                  "Value": "14D"
                 }
               }
             },
@@ -257,23 +255,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "aefdf38430d4b24e097c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "Total Box Office"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

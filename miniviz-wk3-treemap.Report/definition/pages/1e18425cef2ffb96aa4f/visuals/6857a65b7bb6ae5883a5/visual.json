@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "6857a65b7bb6ae5883a5",
   "position": {
-    "x": 76.666666666666671,
-    "y": 235.55555555555554,
-    "z": 1000,
-    "height": 764.44444444444446,
-    "width": 1482.2222222222222,
+    "x": 76.31799163179916,
+    "y": 277.15481171548117,
+    "z": 2000,
+    "height": 723.01255230125525,
+    "width": 1480.1673640167364,
     "tabOrder": 0
   },
   "visual": {
@@ -28,24 +28,6 @@
               },
               "queryRef": "Films.Phase",
               "nativeQueryRef": "Phase"
-            }
-          ]
-        },
-        "Gradient": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Films"
-                    }
-                  },
-                  "Property": "Avg RT Score"
-                }
-              },
-              "queryRef": "Films.Avg RT Score",
-              "nativeQueryRef": "Avg RT Score"
             }
           ]
         },
@@ -129,52 +111,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "FillRule": {
-                      "Input": {
-                        "Measure": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Films"
-                            }
-                          },
-                          "Property": "Avg RT Score"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Films"
                         }
                       },
-                      "FillRule": {
-                        "linearGradient2": {
-                          "min": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'#2A5599'"
-                              }
-                            },
-                            "value": {
-                              "Literal": {
-                                "Value": "55D"
-                              }
-                            }
-                          },
-                          "max": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'#00D4FF'"
-                              }
-                            },
-                            "value": {
-                              "Literal": {
-                                "Value": "95D"
-                              }
-                            }
-                          },
-                          "nullColoringStrategy": {
-                            "strategy": {
-                              "Literal": {
-                                "Value": "'asZero'"
-                              }
-                            }
-                          }
-                        }
-                      }
+                      "Property": "Phase Color"
                     }
                   }
                 }
@@ -384,7 +327,7 @@
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'___AUTO___'"
+                  "Value": "'9ed6a63d28441d29'"
                 }
               }
             },
@@ -523,48 +466,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "ee5ca28214fbfd61b9e1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "Phase"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "0df1a8b9f97fe98f01e1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "Avg RT Score"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "9ffece9c180069794ea7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "Total Box Office"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
