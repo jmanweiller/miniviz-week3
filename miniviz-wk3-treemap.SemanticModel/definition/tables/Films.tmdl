@@ -28,27 +28,40 @@ table Films
 		lineageTag: d4f5b6c7-1111-2222-3333-444455556666
 
 	measure 'Top Grosser' =
-			
+
 			MAXX(
 			    TOPN(1, ALL(Films), [Total Box Office], DESC),
 			    Films[Title]
 			)
 		lineageTag: 3cec8c72-00c8-4b29-848f-5681a0a8b3c4
 
+	measure 'RT Status Icon' =
+			VAR _base = "https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/miniviz-wk3-treemap.Report/StaticResources/RegisteredResources/"
+			VAR _score = [Avg RT Score]
+			RETURN
+			    SWITCH(TRUE(),
+			        _score >= 75, _base & "icon-certified-fresh.png",
+			        _score >= 60, _base & "icon-fresh-tomato.svg",
+			        _base & "icon-rotten-splat.svg"
+			    )
+		lineageTag: e1a2b3c4-d5e6-4f70-8192-a3b4c5d6e7f8
+		dataCategory: ImageUrl
+
+	measure 'Audience Status Icon' =
+			VAR _base = "https://raw.githubusercontent.com/jmanweiller/miniviz-week3/main/miniviz-wk3-treemap.Report/StaticResources/RegisteredResources/"
+			RETURN
+			    IF([Audience Score] >= 60,
+			        _base & "icon-fresh-popcorn.svg",
+			        _base & "icon-rotten-popcorn.svg"
+			    )
+		lineageTag: f2b3c4d5-e6f7-4081-92a3-b4c5d6e7f809
+		dataCategory: ImageUrl
+
 	column Title
 		dataType: string
 		lineageTag: c22c6d7e-3606-4ed1-8c4b-3a0faa909f88
 		summarizeBy: none
 		sourceColumn: Title
-
-	column 'Title Short' =
-			VAR _t = Films[Title]
-			VAR _colon = FIND(":", _t, 1, 0)
-			RETURN
-			    IF(_colon = 0, _t, TRIM(MID(_t, _colon + 1, 999)))
-		dataType: string
-		lineageTag: 8e9f0a1b-2c3d-4e5f-6071-829304a5b6c7
-		summarizeBy: none
 
 	column Phase
 		dataType: string
@@ -112,6 +125,15 @@ table Films
 		dataCategory: ImageUrl
 		summarizeBy: none
 		sourceColumn: PosterUrl
+
+	column 'Title Short' =
+			VAR _t = Films[Title]
+			VAR _colon = FIND(":", _t, 1, 0)
+			RETURN
+			    IF(_colon = 0, _t, TRIM(MID(_t, _colon + 1, 999)))
+		dataType: string
+		lineageTag: 8e9f0a1b-2c3d-4e5f-6071-829304a5b6c7
+		summarizeBy: none
 
 	partition Films = m
 		mode: import

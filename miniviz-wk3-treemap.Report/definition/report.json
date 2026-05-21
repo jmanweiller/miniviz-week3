@@ -69,6 +69,36 @@
           "name": "tooltip-background10713053260719718.svg",
           "path": "tooltip-background10713053260719718.svg",
           "type": "Image"
+        },
+        {
+          "name": "vs-boxes5685218959846904.svg",
+          "path": "vs-boxes5685218959846904.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-fresh-tomato.svg",
+          "path": "icon-fresh-tomato.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-rotten-splat.svg",
+          "path": "icon-rotten-splat.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-fresh-popcorn.svg",
+          "path": "icon-fresh-popcorn.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-rotten-popcorn.svg",
+          "path": "icon-rotten-popcorn.svg",
+          "type": "Image"
+        },
+        {
+          "name": "icon-certified-fresh.png",
+          "path": "icon-certified-fresh.png",
+          "type": "Image"
         }
       ]
     }

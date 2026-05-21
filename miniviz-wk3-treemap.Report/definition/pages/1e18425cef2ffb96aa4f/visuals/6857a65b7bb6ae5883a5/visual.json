@@ -74,11 +74,11 @@
                       "Entity": "Films"
                     }
                   },
-                  "Property": "Title"
+                  "Property": "Title Short"
                 }
               },
-              "queryRef": "Films.Title",
-              "nativeQueryRef": "Title",
+              "queryRef": "Films.Title Short",
+              "nativeQueryRef": "Title Short",
               "active": true
             }
           ]
@@ -507,6 +507,7 @@
           }
         },
         "type": "Categorical",
+        "howCreated": "User",
         "objects": {
           "general": [
             {

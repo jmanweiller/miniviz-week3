@@ -77,7 +77,13 @@
       "Skill(pbip:pbir-format:*)",
       "Bash(grep -rl \"linearGradient\" \"C:/Users/jmanw/.claude/plugins/cache/power-bi-agentic-development/pbip/26.20/skills/pbir-format/examples\" 2>/dev/null | head -5)",
       "Bash(grep -ri \"treemap\" \"C:/Users/jmanw/.claude/plugins/cache/power-bi-agentic-development/pbip/26.20/skills/pbir-format/references/enumerations.md\" 2>/dev/null | head -20)",
-      "Bash(grep -rn \"stroke\\\\|tileBorder\\\\|dataPointBorder\" \"C:/Users/jmanw/.claude/plugins/cache/power-bi-agentic-development/pbip/26.20/skills/pbir-format/\" 2>/dev/null | grep -i tree | head -10)"
+      "Bash(grep -rn \"stroke\\\\|tileBorder\\\\|dataPointBorder\" \"C:/Users/jmanw/.claude/plugins/cache/power-bi-agentic-development/pbip/26.20/skills/pbir-format/\" 2>/dev/null | grep -i tree | head -10)",
+      "Bash(gh repo *)",
+      "Bash(git branch *)",
+      "Bash(git reset *)",
+      "Bash(gh pr create --base main --head treemap-color-and-labels --title 'Treemap color, layout, and label readability' --body ' *)",
+      "Bash(git checkout *)",
+      "Bash(git stash *)"
     ]
   }
 }
