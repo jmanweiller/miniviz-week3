@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    
+    <pattern id="halftoneSmall" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="#ffffff" opacity="0.18"></circle>
+    </pattern>
+    <pattern id="halftoneMed" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2" fill="#FFD60A" opacity="0.45"></circle>
+    </pattern>
+    <pattern id="halftoneRed" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="1.8" fill="#FF2D55" opacity="0.55"></circle>
+    </pattern>
+    <pattern id="halftoneCyan" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.5" fill="#00D4FF" opacity="0.5"></circle>
+    </pattern>
+
+    
+    <pattern id="speedLines" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect x="0" y="0" width="1.2" height="22" fill="#ffffff" opacity="0.07"></rect>
+    </pattern>
+
+    
+    <radialGradient id="cornerGlowYellow" cx="0%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#FFD60A" stop-opacity="0.42"></stop>
+      <stop offset="60%" stop-color="#FF8A00" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#FF8A00" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="cornerGlowMagenta" cx="100%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#FF2D92" stop-opacity="0.38"></stop>
+      <stop offset="55%" stop-color="#7B1FA2" stop-opacity="0.10"></stop>
+      <stop offset="100%" stop-color="#7B1FA2" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="titleBurst" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD60A" stop-opacity="0.95"></stop>
+      <stop offset="70%" stop-color="#FF8A00" stop-opacity="0.85"></stop>
+      <stop offset="100%" stop-color="#FF3B30" stop-opacity="0.9"></stop>
+    </radialGradient>
+
+    <radialGradient id="bgVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#161a2e" stop-opacity="1"></stop>
+      <stop offset="100%" stop-color="#070912" stop-opacity="1"></stop>
+    </radialGradient>
+
+    
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.55"></feDropShadow>
+    </filter>
+    <filter id="hardOutline" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#000000" flood-opacity="1"></feDropShadow>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"></feDropShadow>
+    </filter>
+    <clipPath id="titlePanelClip">
+      <rect x="32" y="30" width="950" height="88" rx="8" ry="8"></rect>
+    </clipPath>
+  </defs>
+
+  
+  <rect width="1280" height="720" fill="url(#bgVignette)"></rect>
+
+  
+  <rect width="1280" height="720" fill="url(#cornerGlowYellow)"></rect>
+  <rect width="1280" height="720" fill="url(#cornerGlowMagenta)"></rect>
+
+  
+  <rect width="1280" height="720" fill="url(#speedLines)"></rect>
+
+  
+  <g opacity="0.55">
+    <rect x="0" y="0" width="520" height="320" fill="url(#halftoneMed)" mask="url(#fadeTL)"></rect>
+    <rect x="780" y="420" width="500" height="300" fill="url(#halftoneRed)" mask="url(#fadeBR)"></rect>
+    <rect x="900" y="0" width="380" height="260" fill="url(#halftoneCyan)" mask="url(#fadeTR)"></rect>
+  </g>
+
+  <defs>
+    <mask id="fadeTL">
+      <radialGradient id="m1" cx="0%" cy="0%" r="100%">
+        <stop offset="0%" stop-color="#fff"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </radialGradient>
+      <rect width="520" height="320" fill="url(#m1)"></rect>
+    </mask>
+    <mask id="fadeBR">
+      <radialGradient id="m2" cx="100%" cy="100%" r="100%">
+        <stop offset="0%" stop-color="#fff"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </radialGradient>
+      <rect width="500" height="300" fill="url(#m2)"></rect>
+    </mask>
+    <mask id="fadeTR">
+      <radialGradient id="m3" cx="100%" cy="0%" r="100%">
+        <stop offset="0%" stop-color="#fff"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </radialGradient>
+      <rect width="380" height="260" fill="url(#m3)"></rect>
+    </mask>
+  </defs>
+
+  
+  <g opacity="0.7">
+    <circle cx="60" cy="700" r="2" fill="#FFD60A"></circle>
+    <circle cx="1240" cy="40" r="1.5" fill="#00D4FF"></circle>
+    <circle cx="640" cy="20" r="1.2" fill="#ffffff"></circle>
+    <circle cx="1100" cy="690" r="2" fill="#FF2D92"></circle>
+    <circle cx="20" cy="380" r="1" fill="#ffffff"></circle>
+    <circle cx="1260" cy="350" r="1.4" fill="#ffffff"></circle>
+    <circle cx="930" cy="50" r="0.8" fill="#FFD60A"></circle>
+  </g>
+
+  
+  <g stroke="#ffffff" stroke-width="1" opacity="0.7">
+    <line x1="930" y1="38" x2="930" y2="62"></line>
+    <line x1="918" y1="50" x2="942" y2="50"></line>
+
+    <line x1="40" y1="690" x2="40" y2="710"></line>
+    <line x1="30" y1="700" x2="50" y2="700"></line>
+  </g>
+
+  
+  <g transform="translate(1200, 78)">
+    
+    <polygon points="&#xA;      0,-58  18,-30  52,-44  36,-14  76,-6  40,8  62,38  22,28  18,62  -4,32&#xA;      -38,52 -28,18 -68,16 -34,-2 -56,-32 -22,-22 -22,-58 -2,-32&#xA;    " fill="#ffffff" filter="url(#hardOutline)"></polygon>
+    
+    <polygon points="&#xA;      0,-44  14,-22  40,-32  28,-10  58,-4  30,6  46,28  16,22  14,46  -4,24&#xA;      -28,38 -22,12 -52,12 -26,0 -42,-22 -16,-16 -16,-44 0,-24&#xA;    " fill="#FF3B30"></polygon>
+    
+    <polygon points="0,-18 5,-5 18,0 5,5 0,18 -5,5 -18,0 -5,-5" fill="#ffffff"></polygon>
+  </g>
+
+  
+  <g transform="translate(1200, 540)" opacity="0.95">
+    <polygon points="&#xA;      0,-28  9,-14  26,-20  17,-6  36,-2  18,4  28,18  10,14  9,30  -2,15&#xA;      -18,24 -14,8 -34,8 -16,0 -27,-14 -10,-10 -10,-28 0,-15&#xA;    " fill="#00D4FF" filter="url(#hardOutline)"></polygon>
+    <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#ffffff"></polygon>
+  </g>
+
+  
+  
+  <g filter="url(#panelShadow)">
+    <rect x="32" y="30" width="950" height="88" rx="8" ry="8" fill="#FFD60A" stroke="#000000" stroke-width="3"></rect>
+    
+    <rect x="32" y="30" width="24" height="88" fill="#FF3B30" clip-path="url(#titlePanelClip)"></rect>
+  </g>
+
+  
+  <text x="74" y="78" font-family="&#39;Bangers&#39;, &#39;Anton&#39;, &#39;Impact&#39;, &#39;Arial Black&#39;, sans-serif" font-size="40" fill="#0a0e1a" letter-spacing="1.5">
+    WHAT MATTERS MOST AT THE BOX OFFICE
+  </text>
+  
+  <text x="74" y="105" font-family="&#39;Courier New&#39;, &#39;Menlo&#39;, monospace" font-size="13" fill="#0a0e1a" letter-spacing="1.2">
+    17 YEARS OF THE MARVEL CINEMATIC UNIVERSE  ◆  SIZED BY GROSS  ◆  COLORED BY CRITICAL RECEPTION
+  </text>
+
+  
+  
+  <g filter="url(#panelShadow)">
+    
+    <rect x="32" y="140" width="1026" height="548" rx="14" ry="14" fill="#0d1226" stroke="#000000" stroke-width="6"></rect>
+    
+    <rect x="38" y="146" width="1014" height="536" rx="10" ry="10" fill="none" stroke="#FFD60A" stroke-width="2"></rect>
+    
+    <rect x="48" y="156" width="994" height="516" rx="6" ry="6" fill="#11172e" stroke="#2a3358" stroke-width="1" stroke-dasharray="4 6"></rect>
+  </g>
+
+  
+  <g transform="translate(60, 130)">
+    <polygon points="0,0 130,0 140,18 0,18" fill="#FF3B30" stroke="#000" stroke-width="2"></polygon>
+    <text x="10" y="14" font-family="&#39;Bangers&#39;,&#39;Anton&#39;,&#39;Impact&#39;,&#39;Arial Black&#39;,sans-serif" font-size="13" fill="#ffffff" letter-spacing="2">
+      THE LINEUP
+    </text>
+  </g>
+
+  
+  <g fill="#FFD60A" stroke="#000" stroke-width="1.5">
+    <circle cx="48" cy="156" r="3"></circle>
+    <circle cx="1042" cy="156" r="3"></circle>
+    <circle cx="48" cy="672" r="3"></circle>
+    <circle cx="1042" cy="672" r="3"></circle>
+  </g>
+
+  
+  
+  <g filter="url(#panelShadow)">
+    <rect x="1078" y="140" width="170" height="172" rx="12" ry="12" fill="#0d1226" stroke="#000000" stroke-width="5"></rect>
+    <rect x="1084" y="146" width="158" height="160" rx="8" ry="8" fill="none" stroke="#00D4FF" stroke-width="2"></rect>
+  </g>
+  
+  <g transform="translate(1098, 130)">
+    <polygon points="0,0 80,0 90,18 0,18" fill="#00D4FF" stroke="#000" stroke-width="2"></polygon>
+    <text x="10" y="14" font-family="&#39;Bangers&#39;,&#39;Anton&#39;,&#39;Impact&#39;,&#39;Arial Black&#39;,sans-serif" font-size="13" fill="#0a0e1a" letter-spacing="2" font-weight="bold">
+      REVENUE
+    </text>
+  </g>
+  
+  <rect x="1094" y="166" width="138" height="132" rx="6" ry="6" fill="#11172e" stroke="#2a3358" stroke-width="1" stroke-dasharray="4 6"></rect>
+
+  
+  <g filter="url(#panelShadow)">
+    <rect x="1078" y="328" width="170" height="172" rx="12" ry="12" fill="#0d1226" stroke="#000000" stroke-width="5"></rect>
+    <rect x="1084" y="334" width="158" height="160" rx="8" ry="8" fill="none" stroke="#FFD60A" stroke-width="2"></rect>
+  </g>
+  
+  <g transform="translate(1098, 318)">
+    <polygon points="0,0 118,0 128,18 0,18" fill="#FFD60A" stroke="#000" stroke-width="2"></polygon>
+    <text x="10" y="14" font-family="&#39;Bangers&#39;,&#39;Anton&#39;,&#39;Impact&#39;,&#39;Arial Black&#39;,sans-serif" font-size="13" fill="#0a0e1a" letter-spacing="2" font-weight="bold">
+      TOP GROSSER
+    </text>
+  </g>
+  <rect x="1094" y="354" width="138" height="132" rx="6" ry="6" fill="#11172e" stroke="#2a3358" stroke-width="1" stroke-dasharray="4 6"></rect>
+
+  
+  <g filter="url(#panelShadow)">
+    <rect x="1078" y="516" width="170" height="172" rx="12" ry="12" fill="#0d1226" stroke="#000000" stroke-width="5"></rect>
+    <rect x="1084" y="522" width="158" height="160" rx="8" ry="8" fill="none" stroke="#FF2D92" stroke-width="2"></rect>
+  </g>
+  <g transform="translate(1098, 506)">
+    <polygon points="0,0 70,0 80,18 0,18" fill="#FF2D92" stroke="#000" stroke-width="2"></polygon>
+    <text x="10" y="14" font-family="&#39;Bangers&#39;,&#39;Anton&#39;,&#39;Impact&#39;,&#39;Arial Black&#39;,sans-serif" font-size="13" fill="#ffffff" letter-spacing="2" font-weight="bold">
+      SCORES
+    </text>
+  </g>
+  <rect x="1094" y="542" width="138" height="132" rx="6" ry="6" fill="#11172e" stroke="#2a3358" stroke-width="1" stroke-dasharray="4 6"></rect>
+
+  
+  <g stroke="#ffffff" stroke-width="1.5" opacity="0.18">
+    <line x1="1053" y1="170" x2="1073" y2="170"></line>
+    <line x1="1053" y1="180" x2="1068" y2="180"></line>
+    <line x1="1053" y1="358" x2="1073" y2="358"></line>
+    <line x1="1053" y1="368" x2="1068" y2="368"></line>
+    <line x1="1053" y1="546" x2="1073" y2="546"></line>
+    <line x1="1053" y1="556" x2="1068" y2="556"></line>
+  </g>
+
+  
+  <rect x="0" y="700" width="1280" height="20" fill="url(#halftoneSmall)" opacity="0.5"></rect>
+
+  
+  <g transform="translate(32, 700)">
+    <text x="0" y="14" font-family="&#39;Courier New&#39;,&#39;Menlo&#39;,monospace" font-size="10" fill="#6b7290" letter-spacing="1.5">
+      ISSUE #003  •  BOX OFFICE CHRONICLES  •  DATA VIZ CONTEST 2026
+    </text>
+  </g>
+
+</svg>

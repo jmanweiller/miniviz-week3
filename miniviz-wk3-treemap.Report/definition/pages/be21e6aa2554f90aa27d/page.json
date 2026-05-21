@@ -1,8 +1,0 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "be21e6aa2554f90aa27d",
-  "displayName": "What Matters Most",
-  "displayOption": "FitToPage",
-  "height": 720,
-  "width": 1280
-}

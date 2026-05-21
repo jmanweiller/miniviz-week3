@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
-  "name": "phaseyear",
+  "name": "60eb12bb27b0cbc225a9",
   "position": {
-    "x": 15.833333333333334,
-    "y": 0,
-    "z": 0,
-    "height": 47.5,
-    "width": 288.33333333333337,
-    "tabOrder": 0
+    "x": 160.43478260869566,
+    "y": 173.91304347826087,
+    "z": 4,
+    "height": 26.956521739130437,
+    "width": 143.47826086956522,
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "cardVisual",
@@ -17,53 +17,51 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Films"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Films"
+                        }
+                      },
+                      "Property": "Budget"
                     }
                   },
-                  "Property": "PhaseYearLabel"
+                  "Function": 0
                 }
               },
-              "queryRef": "Films.PhaseYearLabel",
-              "nativeQueryRef": "PhaseYearLabel",
-              "active": true
+              "queryRef": "Sum(Films.Budget)",
+              "nativeQueryRef": "Sum of Budget"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Films"
+                      }
+                    },
+                    "Property": "Budget"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
-      "value": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
       "outline": [
         {
           "properties": {
@@ -108,6 +106,56 @@
             }
           }
         }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#00D4FF'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -126,23 +174,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "97d946385434d6b1c48c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "PhaseYearLabel"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

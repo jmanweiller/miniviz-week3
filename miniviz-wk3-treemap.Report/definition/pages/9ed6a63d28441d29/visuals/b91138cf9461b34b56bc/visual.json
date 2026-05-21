@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
-  "name": "phaseyear",
+  "name": "b91138cf9461b34b56bc",
   "position": {
-    "x": 15.833333333333334,
-    "y": 0,
-    "z": 0,
-    "height": 47.5,
-    "width": 288.33333333333337,
-    "tabOrder": 0
+    "x": 174.78260869565219,
+    "y": 296.95652173913044,
+    "z": 7,
+    "height": 97.826086956521749,
+    "width": 122.17391304347827,
+    "tabOrder": 7
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,47 +23,35 @@
                       "Entity": "Films"
                     }
                   },
-                  "Property": "PhaseYearLabel"
+                  "Property": "Audience Score"
                 }
               },
-              "queryRef": "Films.PhaseYearLabel",
-              "nativeQueryRef": "PhaseYearLabel",
-              "active": true
+              "queryRef": "Films.Audience Score",
+              "nativeQueryRef": "Audience Score"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Films"
+                  }
+                },
+                "Property": "Audience Score"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
-      "value": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
       "outline": [
         {
           "properties": {
@@ -108,6 +96,57 @@
             }
           }
         }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 6,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -126,23 +165,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "97d946385434d6b1c48c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Films"
-              }
-            },
-            "Property": "PhaseYearLabel"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
