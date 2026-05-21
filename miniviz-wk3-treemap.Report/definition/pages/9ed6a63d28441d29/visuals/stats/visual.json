@@ -110,5 +110,79 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1f96197f8f17f1ae4c35",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Total Box Office"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a7ec1279749eb9e867cb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Budget Sum"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6043d4522ea7896f2f25",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Avg RT Score"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a8a31ffc5f61f111bfc7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Audience Score"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f4cc66db48a28dc724fb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Runtime Director"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
