@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
-  "name": "60eb12bb27b0cbc225a9",
+  "name": "2757a2e7d580830ade70",
   "position": {
-    "x": 160.43478260869566,
-    "y": 173.91304347826087,
-    "z": 5000,
-    "height": 26.956521739130437,
-    "width": 143.47826086956522,
-    "tabOrder": 5000
+    "x": 1766.5975362122647,
+    "y": 811.769865980777,
+    "z": 6000,
+    "height": 197.39759036144579,
+    "width": 93.153919046974409,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -17,22 +17,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Films"
-                        }
-                      },
-                      "Property": "Budget"
+                    "SourceRef": {
+                      "Entity": "Films"
                     }
                   },
-                  "Function": 0
+                  "Property": "Audience Score"
                 }
               },
-              "queryRef": "Sum(Films.Budget)",
-              "nativeQueryRef": "Sum of Budget"
+              "queryRef": "Films.Audience Score",
+              "nativeQueryRef": "Audience Score"
             }
           ]
         }
@@ -41,18 +36,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Films"
-                      }
-                    },
-                    "Property": "Budget"
+                  "SourceRef": {
+                    "Entity": "Films"
                   }
                 },
-                "Function": 0
+                "Property": "Audience Score"
               }
             },
             "direction": "Descending"
@@ -62,13 +52,43 @@
       }
     },
     "objects": {
-      "outline": [
+      "value": [
         {
           "properties": {
-            "show": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 6,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "24D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
                 }
               }
             }
@@ -78,7 +98,7 @@
           }
         }
       ],
-      "divider": [
+      "outline": [
         {
           "properties": {
             "show": {
@@ -107,41 +127,7 @@
           }
         }
       ],
-      "value": [
-        {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#00D4FF'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "14D"
-                }
-              }
-            },
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "label": [
+      "divider": [
         {
           "properties": {
             "show": {
@@ -156,10 +142,79 @@
             "id": "default"
           }
         }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'belowValue'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Fans'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Films.Audience Score"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
       "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Gross'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
         {
           "properties": {
             "show": {

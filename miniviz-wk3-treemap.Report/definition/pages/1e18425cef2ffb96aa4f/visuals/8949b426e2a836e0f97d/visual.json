@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
-  "name": "4016215f72f75eda0e7c",
+  "name": "8949b426e2a836e0f97d",
   "position": {
-    "x": 62,
-    "y": 185,
-    "z": 8,
-    "height": 123,
-    "width": 258,
-    "tabOrder": 8
+    "x": 1688.0334728033472,
+    "y": 851.54811715481173,
+    "z": 0,
+    "height": 117.48953974895397,
+    "width": 114.47698744769875,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "image",
@@ -20,7 +20,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'vs-boxes.svg'"
+                      "Value": "'versus comic style.svg'"
                     }
                   }
                 },
@@ -29,7 +29,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "vs-boxes5685218959846904.svg"
+                      "ItemName": "versus_comic_style9596562713622043.svg"
                     }
                   }
                 },
@@ -39,6 +39,20 @@
                       "Value": "'Normal'"
                     }
                   }
+                }
+              }
+            },
+            "fit": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Normal'"
+                }
+              }
+            },
+            "height": {
+              "expr": {
+                "Literal": {
+                  "Value": "150L"
                 }
               }
             }

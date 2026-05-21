@@ -21,6 +21,21 @@
         },
         "type": "Categorical",
         "howCreated": "Drillthrough"
+      },
+      {
+        "name": "20c0cce2acf6f83540a4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Title Short"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
       }
     ]
   },
@@ -31,8 +46,6 @@
       {
         "name": "0c4714d19a48bde54d4e",
         "boundFilter": "a206c6ffc5761403404a",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {
@@ -41,6 +54,20 @@
               }
             },
             "Property": "Title"
+          }
+        }
+      },
+      {
+        "name": "f59c482f6a27b0c45069",
+        "boundFilter": "20c0cce2acf6f83540a4",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Films"
+              }
+            },
+            "Property": "Title Short"
           }
         }
       }
@@ -64,7 +91,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "tooltip-background10713053260719718.svg"
+                    "ItemName": "tooltip-background6406370322829428.svg"
                   }
                 }
               },

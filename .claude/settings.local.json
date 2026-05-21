@@ -83,7 +83,12 @@
       "Bash(git reset *)",
       "Bash(gh pr create --base main --head treemap-color-and-labels --title 'Treemap color, layout, and label readability' --body ' *)",
       "Bash(git checkout *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(gh pr *)",
+      "WebFetch(domain:www.boxofficemojo.com)",
+      "WebFetch(domain:collider.com)",
+      "WebFetch(domain:marvelcinematicuniverse.fandom.com)",
+      "WebFetch(domain:www.rottentomatoes.com)"
     ]
   }
 }
